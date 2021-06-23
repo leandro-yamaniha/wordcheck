@@ -18,7 +18,10 @@ Será exposto um endpoint que validará a senha de acordo com as seguintes defin
 - Não possuir caracteres repetidos dentro do conjunto
 Nota: Espaços em branco não devem ser considerados como caracteres válidos.
 
-Para validar a senha foi usado expressão regular (Regex).
+Para validar a senha foi usado a seguinte lógica:
+
+<img src="/images/diag01.png" alt="Diagrama"/>
+
 A senha a ser validada será informada no body da requisição do endpoint, verbo POST, http://localhost:8080/validate/password, ,cujo o payload será:
 
 ```
