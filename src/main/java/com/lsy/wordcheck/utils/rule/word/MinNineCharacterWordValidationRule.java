@@ -1,6 +1,6 @@
 package com.lsy.wordcheck.utils.rule.word;
 
-public class MinNineCaracterWordValidationRule implements WordValidationRule {
+public class MinNineCharacterWordValidationRule implements WordValidationRule {
 
     @Override
     public boolean isValid(final String word) {

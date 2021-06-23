@@ -15,7 +15,7 @@ public class ValidatePasswordServiceImpl implements ValidatePasswordService {
 
     @PostConstruct
     public void initRules() {
-        validationRules.add(new MinNineCaracterWordValidationRule());
+        validationRules.add(new MinNineCharacterWordValidationRule());
         validationRules.add(new OneNumberWordValidationRule());
         validationRules.add(new OneLetterLowerCaseWordValidationRule());
         validationRules.add(new OneLetterUpperCaseWordValidationRule());
