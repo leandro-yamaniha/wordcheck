@@ -21,6 +21,7 @@ public class ValidatePasswordServiceImpl implements ValidatePasswordService {
         validationRules.add(new OneLetterUpperCaseWordValidationRule());
         validationRules.add(new OneSpecialCharacterWordValidationRule());
         validationRules.add(new NoRepeatCharacterWordValidationRule());
+        validationRules.add(new NoEmptyCharacterWordValidationRule());
     }
 
     @Override

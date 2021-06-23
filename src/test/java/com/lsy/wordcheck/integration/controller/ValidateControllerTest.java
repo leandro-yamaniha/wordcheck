@@ -54,7 +54,8 @@ class ValidateControllerTest {
     }
 
     @ParameterizedTest(name =  "{0} is not valid")
-    @ValueSource(strings = { "", "aa","ab", "AAAbbbCc", "AbTp9!foo", "AbTp9!foA" ,"AbTp9 fok"})
+    //@ValueSource(strings = { "", "aa","ab", "AAAbbbCc", "AbTp9!foo", "AbTp9!foA" ,"AbTp9 fok","AbTp9!fok "})
+    @ValueSource(strings = { "AbTp9!fok "})
     void okWhenPassWordIsInvalid(String password) throws Exception {
 
         postValidatePassword(password)
