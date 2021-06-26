@@ -122,7 +122,7 @@ mvn clean package
 **Execução**
 
 ```sh
-java -jar target/passcheck-0.0.1-SNAPSHOT.jar
+java -jar target/wordcheck-0.0.1-SNAPSHOT.jar
 ```
 
 **Testes do enpoint**
